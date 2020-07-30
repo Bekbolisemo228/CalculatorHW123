@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6F6978</color>
+    <color name="colorPrimaryDark">#6F6978</color>
+    <color name="colorAccent">#6F6978</color>
+    <color name="colorNumber">#6F6978</color>
+    <color name="colorLogic">#6F6978</color>
+    <color name="colorDelete">#FF0000</color>
+    <color name="colorReturn">#6F6978</color>
+    <color name="LinearLayout">#6F6978</color>
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="end|bottom"
+        android:paddingRight="20dp"
+        android:text=""
+
+        android:textSize="45dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/one_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorNumber"
+                android:onClick="onClick_Btn"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorNumber"
+                android:onClick="onClick_Btn"
+                android:text="2"
+
+                />
+
+            <Button
+                android:id="@+id/tri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@color/colorNumber"
+                android:onClick="onClick_Btn"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLogic"
+                android:onClick="Logic_onClick"
+                android:text="+" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/chturi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorNumber"
+                android:onClick="onClick_Btn"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/pati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorNumber"
+                android:onClick="onClick_Btn"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/hesti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorNumber"
+                android:onClick="onClick_Btn"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLogic"
+                android:onClick="Logic_onClick"
+                android:text="-" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/semi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorNumber"
+                android:onClick="onClick_Btn"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/wosem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorNumber"
+                android:onClick="onClick_Btn"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/dewati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorNumber"
+                android:onClick="onClick_Btn"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/umnojenie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLogic"
+                android:onClick="Logic_onClick"
+                android:text="*" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/tochka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorNumber"
+                android:onClick="onClick_Btn"
+                android:text="." />
+
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorNumber"
+                android:onClick="onClick_Btn"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/rawno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLogic"
+                android:onClick="Logic_onClick"
+                android:text="=" />
+
+            <Button
+                android:id="@+id/delenie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLogic"
+                android:onClick="Logic_onClick"
+                android:text="/" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDelete"
+                android:onClick="onClick_Btn"
+                android:text="C"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorReturn"
+                android:text="@string/jsdn"
+                android:onClick="onBackBtn"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
